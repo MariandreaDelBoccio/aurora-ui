@@ -1,0 +1,16 @@
+/// <reference types="vite/client" />
+/// <reference types="vitest" />
+
+// Allow importing CSS/SCSS and common assets in TS files
+declare module '*.css';
+declare module '*.scss';
+declare module '*.sass';
+declare module '*.less';
+declare module '*.styl';
+
+declare module '*.png';
+declare module '*.jpg';
+declare module '*.jpeg';
+declare module '*.gif';
+declare module '*.webp';
+declare module '*.svg';

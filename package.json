@@ -1,0 +1,69 @@
+{
+  "name": "aurora-ui",
+  "version": "1.0.0",
+  "description": "React components library",
+  "main": "index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "lint": "tsc --noEmit",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "npm run build && changeset publish"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./styles.css": "./dist/index.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "components",
+    "ui",
+    "design-system",
+    "accessibility",
+    "a11y"
+  ],
+  "author": "Mariandrea Del Boccio",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "@rollup/rollup-darwin-arm64": "^4.53.2",
+    "@vitejs/plugin-react": "^5.1.1",
+    "clsx": "^2.1.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tailwind-merge": "^3.4.0"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.7",
+    "@storybook/addon-a11y": "^10.0.7",
+    "@storybook/react": "^10.0.7",
+    "@storybook/react-vite": "^10.0.7",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.4.22",
+    "jsdom": "^27.2.0",
+    "postcss": "^8.4.35",
+    "storybook": "^10.0.7",
+    "tailwindcss": "^3.4.1",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.9"
+  }
+}
