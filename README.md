@@ -1,21 +1,21 @@
 # 🌟 Aurora UI
 
-> Una librería de componentes React moderna, accesible y altamente themable.
+> A modern, accessible, and highly themable React component library.
 
 [![npm version](https://img.shields.io/npm/v/@aurora/ui.svg)](https://www.npmjs.com/package/@aurora/ui)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## ✨ Características
+## ✨ Features
 
-- 🎨 **Themable**: Sistema de theming flexible con CSS variables
-- ♿ **Accesible**: WCAG 2.1 AA compliant, navegación por teclado
-- 🎯 **TypeScript**: Completamente tipado con TypeScript
-- 🌙 **Dark Mode**: Soporte nativo para modo oscuro
-- 📦 **Tree-shakeable**: Solo importa lo que necesitas
-- 🚀 **Performance**: Optimizado con React 18
-- 📱 **Responsive**: Mobile-first design
+- 🎨 **Themable**: Flexible theming system using CSS variables  
+- ♿ **Accessible**: WCAG 2.1 AA compliant, keyboard navigable  
+- 🎯 **TypeScript**: Fully typed with TypeScript  
+- 🌙 **Dark Mode**: Native support for dark mode  
+- 📦 **Tree-shakeable**: Import only what you need  
+- 🚀 **Performance**: Optimized for React 18  
+- 📱 **Responsive**: Mobile-first design  
 
-## 📦 Instalación
+## 📦 Installation
 
 ```bash
 npm install @aurora/ui
@@ -24,9 +24,8 @@ npm install @aurora/ui
 npm install react react-dom
 ```
 
-## 🚀 Uso Rápido
-
-```tsx
+## 🚀 Quick Start
+```bash
 import { Button, Input } from '@aurora/ui';
 import '@aurora/ui/styles.css';
 
@@ -36,10 +35,10 @@ function App() {
       <Input
         label="Email"
         type="email"
-        placeholder="tu@email.com"
+        placeholder="your@email.com"
       />
       <Button variant="primary" size="md">
-        Enviar
+        Submit
       </Button>
     </div>
   );
@@ -47,75 +46,39 @@ function App() {
 ```
 
 ## 🎨 Theming
-
-Aurora UI usa CSS variables para theming. Puedes personalizar colores:
-
-```css
+Aurora UI uses CSS variables for theming. You can customize colors like this:
+```bash
 :root {
   --aurora-primary-500: #your-color;
   --aurora-primary-600: #your-darker-color;
-  /* ... más variables */
+  /* ...more variables */
 }
 ```
 
 ### Tailwind CSS
-
-Si usas Tailwind, puedes integrar Aurora directamente:
-
-```js
-// tailwind.config.js
+If you’re using Tailwind, you can integrate Aurora directly:
+```bash
 module.exports = {
   content: [
     './src/**/*.{js,jsx,ts,tsx}',
     './node_modules/@aurora/ui/**/*.{js,jsx,ts,tsx}',
   ],
-  // ... resto de config
+  // ...rest of config
 };
 ```
 
-## 📚 Componentes Disponibles
-
-### Button
-
-```tsx
-<Button 
-  variant="primary" 
-  size="md"
-  loading={false}
-  disabled={false}
->
-  Click me
-</Button>
-```
-
-**Variantes**: `primary`, `secondary`, `outline`, `ghost`, `danger`  
-**Tamaños**: `sm`, `md`, `lg`
-
-### Input
-
-```tsx
-<Input
-  label="Username"
-  placeholder="johndoe"
-  error="Username is required"
-  helperText="Min 3 characters"
-  leftIcon={<UserIcon />}
-/>
-```
-
-## 🛠️ Desarrollo
-
+## 🛠️ Development
 ```bash
-# Instalar dependencias
+# Install dependencies
 npm install
 
-# Desarrollo con watch
+# Start development with watch mode
 npm run dev
 
 # Build
 npm run build
 
-# Tests
+# Run tests
 npm run test
 
 # Storybook
@@ -123,15 +86,13 @@ npm run storybook
 ```
 
 ## 📖 Storybook
-
-Explora todos los componentes en Storybook:
+Explore all components in Storybook:
 
 ```bash
 npm run storybook
 ```
 
 ## 🧪 Testing
-
 ```bash
 # Run tests
 npm run test
@@ -143,30 +104,18 @@ npm run test -- --coverage
 npm run test -- --watch
 ```
 
-## 🤝 Contribuir
+## 🤝 Contributing
+Contributions are welcome! Please:
 
-Las contribuciones son bienvenidas! Por favor:
+1. Fork the repository
 
-1. Fork el proyecto
-2. Crea una branch para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la branch (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
+2. Create a feature branch (git checkout -b feature/AmazingFeature)
 
-## 📝 Roadmap
+3. Commit your changes (git commit -m 'Add some AmazingFeature')
 
-- [ ] Más componentes (Select, Modal, Tooltip, etc.)
-- [ ] Animaciones con Framer Motion
-- [ ] Modo de alto contraste
-- [ ] Documentación interactiva
-- [ ] CLI para generar componentes custom
+4. Push to the branch (git push origin feature/AmazingFeature)
 
-## 📄 Licencia
+5. Open a Pull Request
 
-MIT © [Tu Nombre]
-
-## 🙏 Agradecimientos
-
-Inspirado por excelentes librerías como Radix UI, Chakra UI y shadcn/ui.
-
----
+🙏 Acknowledgements
+Inspired by amazing libraries like Radix UI, Chakra UI, and shadcn/ui.
