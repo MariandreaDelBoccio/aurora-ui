@@ -39,7 +39,7 @@
   "license": "MIT",
   "type": "commonjs",
   "dependencies": {
-    "@rollup/rollup-darwin-arm64": "^4.53.2",
+    "rollup": "^4.53.2",
     "@vitejs/plugin-react": "^5.1.1",
     "clsx": "^2.1.1",
     "react": "^19.2.0",
